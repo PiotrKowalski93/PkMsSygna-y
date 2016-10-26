@@ -57,9 +57,13 @@
     </ApplicationDefinition>
     <Compile Include="Sygaly\Sygnal.cs" />
     <Compile Include="Sygaly\SygnalCiagly.cs" />
+    <Compile Include="SygnalyCiagle\SkokJednostkowy.cs" />
+    <Compile Include="SygnalyCiagle\SygnalProstokatny.cs" />
+    <Compile Include="SygnalyCiagle\SygnalProstokatnySymetryczny.cs" />
     <Compile Include="SygnalyCiagle\SygnalSinusoidalny.cs" />
     <Compile Include="SygnalyCiagle\SygnalSinusoidalnyDwupolowkowo.cs" />
     <Compile Include="SygnalyCiagle\SygnalSinusoidalnyJednopolowkowo.cs" />
+    <Compile Include="SygnalyCiagle\SygnalTrojkatny.cs" />
     <Compile Include="SygnalyCiagle\SzumGaussowski.cs" />
     <Compile Include="SygnalyCiagle\SzumRozdladJednostajny.cs" />
     <Page Include="MainWindow.xaml">
