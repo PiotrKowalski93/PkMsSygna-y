@@ -3,13 +3,13 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:toolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
         xmlns:local="clr-namespace:Sygnaly"
         mc:Ignorable="d"
         Title="Sygnały" Height="750" Width="950" ResizeMode="NoResize">
     <Grid Background="#FFB8B6B6">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.5*"/>
-            <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
 
@@ -95,6 +95,23 @@
 
         </Grid>
 
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            
+            <toolkit:Chart Grid.Row="0">
+
+            </toolkit:Chart>
+
+            <toolkit:Chart Grid.Row="1">
+
+            </toolkit:Chart>
+        </Grid>
+
+        
+        
 
     </Grid>
 </Window>
