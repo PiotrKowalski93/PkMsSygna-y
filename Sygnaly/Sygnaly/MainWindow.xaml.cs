@@ -23,6 +23,22 @@ namespace Sygnaly
         public MainWindow()
         {
             InitializeComponent();
+            AddItems();
+        }
+
+        private void AddItems()
+        {
+            TypySygnalow.Items.Add("Skok Jednostkowy");
+            TypySygnalow.Items.Add("Prostokatny");
+            TypySygnalow.Items.Add("Prostokatny Symetryczny");
+            TypySygnalow.Items.Add("Sinusoidalny");
+            TypySygnalow.Items.Add("Sinusoidalny Dwupolowkowo");
+            TypySygnalow.Items.Add("Sinusoidalny Jednopolowkowo");
+            TypySygnalow.Items.Add("Trójkatny");
+            TypySygnalow.Items.Add("Szum Gaussowski");
+            TypySygnalow.Items.Add("Szum o Rozdkladzie Jednostajnym");
+            TypySygnalow.Items.Add("Impuls Jednostkowy");
+            TypySygnalow.Items.Add("Szum Impulsowy");
         }
     }
 }

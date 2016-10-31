@@ -5,8 +5,96 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sygnaly"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Sygnały" Height="750" Width="950" ResizeMode="NoResize">
+    <Grid Background="#FFB8B6B6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="TypySygnalowLabel" FontSize="10" Margin="5,5" Width="50" Height="25" HorizontalAlignment="Left">Sygnał:</Label>
+                <ComboBox x:Name="TypySygnalow" Grid.Row="1" Margin="5,5" Height="25"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="AmplitudaLabel" Grid.Column="0" FontSize="10" Margin="5,5" Width="70" Height="25" HorizontalAlignment="Left">Amplituda:</Label>
+                <TextBox x:Name="Amplituda" Grid.Column="1" Grid.Row="1" Margin="5,5" Height="25"/>
+            </Grid>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="CzasPoczatkowyLabel" Grid.Column="0" FontSize="10" Margin="5,5" Height="25" HorizontalAlignment="Left">Czas Poczatkowy:</Label>
+                <TextBox x:Name="CzasPoczatkowy" Grid.Column="1" Grid.Row="1" Margin="5,5" Height="25"/>
+            </Grid>
+
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="CzasTrwaniaSygnaluLabel" Grid.Column="0" FontSize="10" Margin="5,5" Width="70" Height="25" HorizontalAlignment="Left">Czas Trwania:</Label>
+                <TextBox x:Name="CzasTrwaniaSygnalu" Grid.Column="1" Grid.Row="1" Margin="5,5" Height="25"/>
+            </Grid>
+
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="OkresPodstawowyLabel" Grid.Column="0" FontSize="10" Margin="5,5" Height="25" HorizontalAlignment="Left">Okres Podstawowy:</Label>
+                <TextBox x:Name="OkresPodstwawowy" Grid.Column="1" Grid.Row="1" Margin="5,5" Height="25"/>
+            </Grid>
+
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="75"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="WspolczynnikWypelnienia" Grid.Column="0" FontSize="10" Margin="5,5" Height="25" HorizontalAlignment="Left">Wspol. Wypelnienia:</Label>
+                <TextBox x:Name="WspolczynnikWpelnienia" Grid.Column="1" Grid.Row="1" Margin="5,5" Height="25"/>
+            </Grid>
+
+        </Grid>
+
+
     </Grid>
 </Window>

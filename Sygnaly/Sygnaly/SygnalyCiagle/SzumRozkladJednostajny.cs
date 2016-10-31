@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Sygnaly.SygnalyCiagle
 {
-    class SzumRozdladJednostajny : SygnalCiagly
+    class SzumRozkladJednostajny : SygnalCiagly
     {
         private Random random = new Random();
 
-        SzumRozdladJednostajny(double A, double t1, double d)
+        SzumRozkladJednostajny(double A, double t1, double d)
         {
             this.A = A;
             this.t1 = t1;
